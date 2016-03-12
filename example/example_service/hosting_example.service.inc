@@ -121,7 +121,7 @@ class hostingService_example_basic extends hostingService_example {
       '#title' => t('Example field'),
       '#description' => t('An example field for the user to fill in.'),
       '#size' => 40,
-      '#default_value' => ($this->example_field) ? $this->example_field : 'default value',
+      '#default_value' => isset($this->example_field) ? $this->example_field : 'default value',
       '#maxlength' => 64,
       '#weight' => 5,
     );
