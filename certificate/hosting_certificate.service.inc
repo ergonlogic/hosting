@@ -118,7 +118,7 @@ class hostingService_certificate_selfsigned extends hostingService_certificate {
       '#title' => t('Certificate field'),
       '#description' => t('An certificate field for the user to fill in.'),
       '#size' => 40,
-      '#default_value' => ($this->certificate_field) ? $this->certificate_field : 'default value',
+      '#default_value' => isset($this->certificate_field) ? $this->certificate_field : 'default value',
       '#maxlength' => 64,
       '#weight' => 5,
     );
